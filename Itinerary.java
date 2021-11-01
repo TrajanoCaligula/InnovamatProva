@@ -1,6 +1,7 @@
 import java.util.LinkedList;
 
 public class Itinerary {
+    private int id;
     private LinkedList<Activity> activities;
 
     public Itinerary(LinkedList<Activity> activities) {

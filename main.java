@@ -20,7 +20,7 @@ public class main {
         User user = new User(1, itinerary, null);
 
         /* Inici sequencia */
-        user.setCurrentActivity(nextActivity(itinerary, null, "", 0, user));
+        user.setCurrentActivity(nextActivity(itinerary, null, "", 0, user)); //null, ja que no ha iniciat cap itinerari
         System.out.println(user.getCurrentActivity().getId());
         user.setCurrentActivity(nextActivity(user.getCurrentItinerary(), user.getCurrentActivity(), "1_0_2", 90, user));
         user.setCurrentActivity(nextActivity(user.getCurrentItinerary(), user.getCurrentActivity(), "-2_40_56", 15, user));
